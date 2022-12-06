@@ -9,6 +9,7 @@ export const adminRouter = express.Router();
 
 // --- דוחות חופשה וכמות עוקבים----
 adminRouter.get("/report", onlyAdmin, async (req: Request, res: Response) => {
+  //onlyAdmin is a middleware
   try {
     const forreport = await SQL(`
         SELECT * FROM vacationdb.vacations

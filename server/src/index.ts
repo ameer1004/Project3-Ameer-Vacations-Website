@@ -3,7 +3,6 @@ import express, { Request, Response } from "express";
 import session from "express-session";
 import cookieParser from "cookie-parser";
 
-
 import { adminRouter } from "./Routes/admin-router";
 import { userRouter } from "./Routes/users";
 import { vacationRouter } from "./Routes/vacations";
@@ -15,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:3000",
+    origin: "https://vacations-project-api.onrender.com",
     credentials: true,
   })
 );
