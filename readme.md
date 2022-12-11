@@ -1,4 +1,4 @@
-# Website Vacations: Deploy: https://vacations-project.onrender.com/
+
 
 ## Full stack project (React + node + mySQL):
 
